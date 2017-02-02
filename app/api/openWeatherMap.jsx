@@ -15,8 +15,8 @@ module.exports = {
       }
     }, function (res) {
       // Commented line will use the openWeatherMap response
-      // throw new Error(res.data.message);
-      throw new Error('Unable to fetch weather for that location.');
+      throw new Error(res.data.message);
+      // throw new Error('Unable to fetch weather for that location.');
     });
   }
 }
